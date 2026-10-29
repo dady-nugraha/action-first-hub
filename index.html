@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action-First Hub: Master Précis & Interactive Toolkit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- TRANSPARENCY & TRUST BAR -->
+    <header class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center text-xs sm:text-sm">
+            <div class="flex items-center gap-2 font-bold tracking-wide text-emerald-400">
+                <i class="fa-solid fa-cube text-base"></i>
+                <span>ACTION-FIRST HUB</span>
+            </div>
+            <div class="text-slate-400 flex items-center gap-1.5">
+                <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                <span>Central Knowledge Vault & Interactive Companion</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-6xl mx-auto px-4 py-10 space-y-12 flex-grow">
+
+        <!-- HERO SECTION -->
+        <section class="space-y-4 text-center max-w-3xl mx-auto">
+            <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                Sistem Produktivitas Berbasis Prinsip Klasik
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                Pusat Kendali Alat Praktik & Précis Buku Klasik
+            </h1>
+            <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                Akses cepat ke seluruh 18+ perangkat interaktif mandiri (*Local Storage Powered*) untuk mentransformasikan intisari bacaan menjadi tindakan nyata.
+            </p>
+            <!-- Search Bar -->
+            <div class="pt-4 max-w-md mx-auto">
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" id="searchBox" onkeyup="filterTools()" placeholder="Cari judul buku, penulis, atau topik..." class="w-full pl-10 pr-4 py-3 bg-white border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-sm">
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMASI PLATFORM SECTION (RESTORED) -->
+        <section class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center gap-3 text-slate-900 font-bold text-lg">
+                <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <h2>Informasi Platform - Apa itu Action-First Hub?</h2>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                <strong>Action-First Hub</strong> adalah ekosistem alat bantu mandiri (*independent interactive companion toolkit*) yang dirancang khusus untuk menjembatani teori dari buku-buku pengembangan diri, manajemen strategis, dan produktivitas global ke dalam lembar kerja praktis yang dapat dieksekusi hari ini juga. 
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
+                    <div class="text-emerald-600 font-bold text-xs uppercase"><i class="fa-solid fa-bolt mr-1"></i> Berbasis Tindakan</div>
+                    <p class="text-xs text-slate-500">Bukan sekadar ringkasan teks pasif, melainkan alat kalkulasi & tracker interaktif.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
+                    <div class="text-emerald-600 font-bold text-xs uppercase"><i class="fa-solid fa-lock mr-1"></i> Privasi Lokal</div>
+                    <p class="text-xs text-slate-500">Seluruh data aktivitas tersimpan aman di perangkat Anda melalui LocalStorage browser.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
+                    <div class="text-emerald-600 font-bold text-xs uppercase"><i class="fa-solid fa-feather mr-1"></i> Tanpa Distraksi</div>
+                    <p class="text-xs text-slate-500">Antarmuka minimalis, ringan, cepat, dan siap digunakan kapan pun dibutuhkan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATALOG SECTION -->
+        <section class="space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                <h2 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                    <i class="fa-solid fa-book-open text-emerald-600"></i>
+                    Direktori Lengkap 18 Toolkit Buku
+                </h2>
+                <span id="toolCount" class="text-xs font-semibold bg-slate-200 text-slate-700 px-2.5 py-1 rounded-full">18 Buku</span>
+            </div>
+
+            <!-- GRID CONTAINER DINAMIS -->
+            <div id="toolsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dimuat secara dinamis via script manifes -->
+            </div>
+        </section>
+
+        <!-- TRANSPARANSI ETIS SECTION (RESTORED) -->
+        <section class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3 font-bold text-lg text-emerald-400">
+                <div class="w-9 h-9 rounded-lg bg-slate-800 text-emerald-400 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+                <h2>Transparansi Etis - Model Kemitraan & Dukungan Pengembangan</h2>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Action-First Hub dikembangkan secara independen sebagai perangkat bantu literasi dan manajemen. Situs ini tidak terafiliasi secara resmi, disponsori, atau disetujui oleh penerbit asli atau penulis buku yang dirujuk. Seluruh hak cipta materi intelektual, judul, dan konsep dasar tetap menjadi milik masing-masing pemegang hak cipta resmi.
+            </p>
+            <p class="text-xs text-slate-400">
+                Beberapa tautan rekomendasi dalam perangkat ini mungkin menyertakan tautan afiliasi buku fisik/e-book resmi, di mana pengembang dapat menerima komisi kecil tanpa ada tambahan biaya apa pun bagi Anda. Dukungan ini membantu keberlanjutan pemeliharaan dan pembaruan sistem perangkat gratis ini.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-xs py-6 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Action-First Hub. Seluruh Hak Cipta Dilindungi.</p>
+            <div class="flex items-center gap-4">
+                <span class="text-emerald-400 font-medium">18 Modul Buku Terhubung</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT RENDER KATALOG DARI MANIFES -->
+    <script>
+        async function renderCatalog() {
+            try {
+                const response = await fetch('assets/data/books-manifest.json');
+                const data = await response.json();
+                const grid = document.getElementById('toolsGrid');
+                grid.innerHTML = '';
+
+                data.books.forEach(book => {
+                    let borderHover = 'hover:border-emerald-400';
+                    let badgeBg = 'bg-emerald-50 text-emerald-700';
+                    let iconColor = 'text-emerald-600';
+
+                    if(book.badgeColor === 'amber') { borderHover = 'hover:border-amber-400'; badgeBg = 'bg-amber-50 text-amber-800'; iconColor = 'text-amber-600'; }
+                    if(book.badgeColor === 'orange') { borderHover = 'hover:border-orange-400'; badgeBg = 'bg-orange-50 text-orange-800'; iconColor = 'text-orange-600'; }
+                    if(book.badgeColor === 'purple') { borderHover = 'hover:border-purple-400'; badgeBg = 'bg-purple-50 text-purple-800'; iconColor = 'text-purple-600'; }
+                    if(book.badgeColor === 'indigo') { borderHover = 'hover:border-indigo-400'; badgeBg = 'bg-indigo-50 text-indigo-800'; iconColor = 'text-indigo-600'; }
+                    if(book.badgeColor === 'blue') { borderHover = 'hover:border-blue-400'; badgeBg = 'bg-blue-50 text-blue-800'; iconColor = 'text-blue-600'; }
+                    if(book.badgeColor === 'teal') { borderHover = 'hover:border-teal-400'; badgeBg = 'bg-teal-50 text-teal-800'; iconColor = 'text-teal-600'; }
+                    if(book.badgeColor === 'red') { borderHover = 'hover:border-red-400'; badgeBg = 'bg-red-50 text-red-800'; iconColor = 'text-red-600'; }
+
+                    const card = document.createElement('div');
+                    card.className = `tool-card bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md ${borderHover} transition flex flex-col justify-between space-y-4`;
+                    card.setAttribute('data-title', `${book.title.toLowerCase()} ${book.author.toLowerCase()} ${book.category.toLowerCase()}`);
+                    
+                    card.innerHTML = `
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-bold uppercase px-2.5 py-1 ${badgeBg} rounded-md">${book.category}</span>
+                                <i class="fa-solid fa-cube ${iconColor} text-sm"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-base leading-snug">${book.title}</h3>
+                            <p class="text-[11px] font-medium text-slate-500">Oleh: ${book.author}</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">${book.description}</p>
+                        </div>
+                        <a href="app.html?book=${book.id}" class="w-full py-2.5 bg-slate-900 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg text-center transition flex items-center justify-center gap-1.5">
+                            <span>Buka Alat Praktik</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    `;
+                    grid.appendChild(card);
+                });
+            } catch (e) {
+                console.error("Gagal memuat manifes katalog:", e);
+            }
+        }
+
+        function filterTools() {
+            const query = document.getElementById('searchBox').value.toLowerCase();
+            const cards = document.querySelectorAll('.tool-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const titleData = card.getAttribute('data-title');
+                if (titleData.includes(query)) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            document.getElementById('toolCount').innerText = `${visibleCount} Buku`;
+        }
+
+        window.addEventListener('DOMContentLoaded', renderCatalog);
+    </script>
+</body>
+</html>

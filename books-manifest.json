@@ -1,0 +1,168 @@
+{
+  "version": "2.1.0",
+  "total_books": 18,
+  "books": [
+    {
+      "id": "atomic-habits",
+      "title": "Atomic Habits: Tiny Changes, Remarkable Results",
+      "author": "James Clear",
+      "category": "Psikologi & Kebiasaan",
+      "badgeColor": "emerald",
+      "description": "Sistem perubahan kecil berbasis identitas untuk mencetak hasil luar biasa.",
+      "file": "modules/atomic-habits.html"
+    },
+    {
+      "id": "deep-work",
+      "title": "Deep Work: Rules for Focused Success",
+      "author": "Cal Newport",
+      "category": "Fokus & Produktivitas",
+      "badgeColor": "blue",
+      "description": "Kuasai kemampuan konsentrasi tanpa distraksi di dunia yang penuh gangguan.",
+      "file": "modules/deep-work.html"
+    },
+    {
+      "id": "the-7-habits",
+      "title": "The 7 Habits of Highly Effective People",
+      "author": "Stephen R. Covey",
+      "category": "Manajemen Waktu",
+      "badgeColor": "emerald",
+      "description": "Matriks manajemen waktu Kuadran II & prinsip efektivitas universal.",
+      "file": "modules/the-7-habits.html"
+    },
+    {
+      "id": "the-book-of-five-rings",
+      "title": "The Book of Five Rings (Gorin no Sho)",
+      "author": "Miyamoto Musashi",
+      "category": "Strategi & Mental",
+      "badgeColor": "amber",
+      "description": "Risalah strategi tempur klasik & pendekatan 5 elemen alam dalam menghadapi konflik.",
+      "file": "modules/the-book-of-five-rings.html"
+    },
+    {
+      "id": "the-chill-delusion",
+      "title": "The Chill Delusion",
+      "author": "Fellycia Simanjuntak",
+      "category": "Kritik Sosial & Tindakan",
+      "badgeColor": "orange",
+      "description": "Membongkar ilusi budaya 'chill' semu menuju tindakan sadar (intentional actions).",
+      "file": "modules/the-chill-delusion.html"
+    },
+    {
+      "id": "the-master-key-system",
+      "title": "The Master Key System",
+      "author": "Charles F. Haanel",
+      "category": "Pengembangan Mental",
+      "badgeColor": "purple",
+      "description": "Latihan konsentrasi, keheningan mental, dan visualisasi bawah sadar harian.",
+      "file": "modules/the-master-key-system.html"
+    },
+    {
+      "id": "the-power-of-habit",
+      "title": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "category": "Psikologi Kebiasaan",
+      "badgeColor": "indigo",
+      "description": "Menganalisis Habit Loop (Cue, Routine, Reward) dan aturan emas perubahannya.",
+      "file": "modules/the-power-of-habit.html"
+    },
+    {
+      "id": "the-practice-of-management",
+      "title": "The Practice of Management",
+      "author": "Peter F. Drucker",
+      "category": "Manajemen & Bisnis",
+      "badgeColor": "blue",
+      "description": "Penerapan Management by Objectives (MBO) dan Area Kinerja Kunci (KRA).",
+      "file": "modules/the-practice-of-management.html"
+    },
+    {
+      "id": "the-productive-muslim",
+      "title": "The Productive Muslim",
+      "author": "Mohammed Faris",
+      "category": "Produktivitas Spiritual",
+      "badgeColor": "teal",
+      "description": "Integrasi energi fisik, spiritual, dan blok waktu produktif berbasis barokah.",
+      "file": "modules/the-productive-muslim.html"
+    },
+    {
+      "id": "the-psychology-of-money",
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "category": "Psikologi Keuangan",
+      "badgeColor": "emerald",
+      "description": "Audit perilaku finansial, batas 'cukup' (enough), dan margin keamanan.",
+      "file": "modules/the-psychology-of-money.html"
+    },
+    {
+      "id": "toyota-production-system",
+      "title": "Toyota Production System (TPS)",
+      "author": "Taiichi Ohno",
+      "category": "Sistem Operasional",
+      "badgeColor": "red",
+      "description": "Identifikasi 7 pemborosan (Muda) dan siklus perbaikan Kaizen berkelanjutan.",
+      "file": "modules/toyota-production-system.html"
+    },
+    {
+      "id": "zero-to-one",
+      "title": "Zero to One: Notes on Startups",
+      "author": "Peter Thiel",
+      "category": "Inovasi & Bisnis",
+      "badgeColor": "slate",
+      "description": "Membangun inovasi vertikal moneter dari nol menjadi satu.",
+      "file": "modules/zero-to-one.html"
+    },
+    {
+      "id": "thinking-fast-and-slow",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "category": "Kognitif & Psikologi",
+      "badgeColor": "yellow",
+      "description": "Memahami sistem berpikir cepat (insting) dan lambat (analitis).",
+      "file": "modules/thinking-fast-and-slow.html"
+    },
+    {
+      "id": "good-to-great",
+      "title": "Good to Great",
+      "author": "Jim Collins",
+      "category": "Kepemimpinan & Bisnis",
+      "badgeColor": "cyan",
+      "description": "Transformasi organisasi dari baik menjadi luar biasa lewat disiplin tingkat tinggi.",
+      "file": "modules/good-to-great.html"
+    },
+    {
+      "id": "so-good-they-cant-ignore-you",
+      "title": "So Good They Can't Ignore You",
+      "author": "Cal Newport",
+      "category": "Pengembangan Karir",
+      "badgeColor": "blue",
+      "description": "Mengabaikan passion dan membangun keahlian langka bernilai tinggi.",
+      "file": "modules/so-good-they-cant-ignore-you.html"
+    },
+    {
+      "id": "essentialism",
+      "title": "Essentialism: The Disciplined Pursuit of Less",
+      "author": "Greg McKeown",
+      "category": "Manajemen Fokus",
+      "badgeColor": "emerald",
+      "description": "Seni melakukan lebih sedikit hal secara lebih bermakna.",
+      "file": "modules/essentialism.html"
+    },
+    {
+      "id": "antifragile",
+      "title": "Antifragile: Things That Gain from Disorder",
+      "author": "Nassim Nicholas Taleb",
+      "category": "Manajemen Risiko",
+      "badgeColor": "rose",
+      "description": "Bertahan dan bertumbuh di tengah kekacauan serta volatilitas.",
+      "file": "modules/antifragile.html"
+    },
+    {
+      "id": "hooked",
+      "title": "Hooked: How to Build Habit-Forming Products",
+      "author": "Nir Eyal",
+      "category": "Desain Produk & Psikologi",
+      "badgeColor": "violet",
+      "description": "Model 4 tahap memicu keterlibatan pengguna secara etis.",
+      "file": "modules/hooked.html"
+    }
+  ]
+}

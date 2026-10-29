@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Action-First Hub - Custom Style & UI Overrides
+   ========================================================================== */
+
+/* Custom Smooth Transitions & Interactivity */
+body {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Card Hover Elevation & Glassmorphism Details */
+.tool-card {
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.2s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom Scrollbar for Clean UI */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Table Custom Styles for Micro-Tools */
+table th {
+    letter-spacing: 0.05em;
+}
+
+table tr {
+    transition: background-color 0.15s ease;
+}
+
+/* Modal & Notification Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Completed State Strikethrough Effect */
+.line-through-fade {
+    text-decoration: line-through;
+    opacity: 0.55;
+    transition: all 0.2s ease;
+}
+
+/* Print Optimization for Exporting Reports */
+@media print {
+    header, footer, button, form, .no-print {
+        display: none !important;
+    }
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+    main {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    .shadow-sm, .shadow-md, .shadow-lg {
+        box-shadow: none !important;
+    }
+}
